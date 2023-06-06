@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
+# Define a function called `pow` that takes two arguments: `a` and `b`.
+# The function returns `a` to the power of `b`.
 def pow(a, b):
-  result = 1
-  while b > 0:
-    if b % 2 == 1:
-      result *= a
-    b //= 2
-    a *= a
-  return result
-
+  return a ** b
