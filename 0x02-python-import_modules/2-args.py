@@ -1,13 +1,15 @@
-"""Print the number of and list of arguments passed to the program."""
-import sys
+#!/usr/bin/python3
 
-count = len(sys.argv) - 1
+if __name__ == "__main__":
+    """Print the number of and list of arguments."""
+    import sys
 
-if count == 0:
-    print("No arguments passed.")
-elif count == 1:
-    print("One argument passed:", sys.argv[1])
-else:
-    print("{} arguments passed:".format(count))
+    count = len(sys.argv) - 1
+    if count == 0:
+        print("0 arguments.")
+    elif count == 1:
+        print("1 argument:")
+    else:
+        print("{} arguments:".format(count))
     for i in range(count):
         print("{}: {}".format(i + 1, sys.argv[i + 1]))
