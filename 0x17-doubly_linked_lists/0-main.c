@@ -1,9 +1,10 @@
 #include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "lists.h"
 
 /**
- * main - Check the code
+ * main - check the code
  *
  * Return: Always EXIT_SUCCESS.
  */
@@ -18,7 +19,7 @@ int main(void)
     new = malloc(sizeof(dlistint_t));
     if (new == NULL)
     {
-        fprintf(stderr, "Error: Can't malloc\n");
+        dprintf(2, "Error: Can't malloc\n");
         return (EXIT_FAILURE);
     }
     new->n = 9;
@@ -31,4 +32,3 @@ int main(void)
     free(new);
     return (EXIT_SUCCESS);
 }
-
