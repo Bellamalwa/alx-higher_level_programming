@@ -1,6 +1,3 @@
--- Lists the number of records with the same score in the table second_table.
--- Records are ordered by descending count.
-SELECT `score`, COUNT(*) AS `number`
-FROM `second_table`
-GROUP BY `score`
-ORDER BY `number` DESC;
+-- Do not list rows with NULL column
+-- List rows only where `name` is not NULL
+SELECT score, name FROM `second_table` WHERE NAME IS NOT NULL ORDER BY score desc;
