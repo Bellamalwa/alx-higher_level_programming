@@ -1,15 +1,13 @@
 #!/usr/bin/node
 /** File:  1-writeme.js
-*   Author: Christabell Wamalwa*/
+*   Author: Christabell Wamalwa */
 
-const process = require('process');
-const filesystem = require('fs');
+const fs = require('fs');
+const path = process.argv[2];
+const argms = process.argv[3];
 
-const file = process.argv[2];
-const text = process.argv[3];
-
-filesystem.writeFile(file, text, 'utf8', function (err, data) {
-  if (err != null) {
+fs.writeFile(path, argms, function (err) {
+  if (err) {
     console.log(err);
   }
 });
