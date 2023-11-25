@@ -379,8 +379,5 @@ guillaume@ubuntu:~/0x15$ cat 9-main.html
 guillaume@ubuntu:~/0x15$ 
 Repo:
 
-GitHub repository: alx-higher_level_programming
-Directory: 0x15-javascript-web_jquery
-File: 9-script.js
- 
+GitHub repository: alx-hi 
 
